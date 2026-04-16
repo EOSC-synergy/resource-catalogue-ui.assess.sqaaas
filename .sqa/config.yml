@@ -5,7 +5,7 @@ config:
       branch: feature/pynblint_fix
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/madgeek-arc/resource-catalogue-ui:
-      branch: master
+      branch: post-v6
       repo: https://github.com/madgeek-arc/resource-catalogue-ui
 environment:
   JPL_DOCKERFORCEBUILD: enabled
@@ -15,42 +15,42 @@ sqa_criteria:
     repos:
       github.com/madgeek-arc/resource-catalogue-ui git:
         commands:
-        - /usr/bin/env sh .sqa/script.flaky-xanthic-quetzal.sh
-        container: qc.acc_bumpy-celadon-husky
+        - /usr/bin/env sh .sqa/script.craggy-cerulean-coati.sh
+        container: qc.acc_sloppy-ivory-dachshund
   QC.Doc:
     repos:
       github.com/madgeek-arc/resource-catalogue-ui find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.seedy-cream-budgerigar.sh
-        container: qc.doc_grumpy-burgundy-chameleon
+        - /usr/bin/env sh .sqa/script.sunny-aqua-birman.sh
+        container: qc.doc_gummy-aquamarine-okapi
       github.com/madgeek-arc/resource-catalogue-ui git:
         commands:
-        - /usr/bin/env sh .sqa/script.lovely-olivine-tarantula.sh
-        container: qc.doc_flaky-mauve-hummingbird
+        - /usr/bin/env sh .sqa/script.gamy-azure-gerbil.sh
+        container: qc.doc_snippy-celadon-chimpanzee
       github.com/madgeek-arc/resource-catalogue-ui markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.bluesy-mauve-mole.sh
-        container: qc.doc_goopy-alizarin-owl
+        - /usr/bin/env sh .sqa/script.wheezy-jade-starfish.sh
+        container: qc.doc_leaky-ultramarine-sheep
   QC.Lic:
     repos:
       github.com/madgeek-arc/resource-catalogue-ui licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.bumpy-alizarin-lizard.sh
-        container: qc.lic_grumpy-copper-tang
+        - /usr/bin/env sh .sqa/script.silly-fuchsia-markhor.sh
+        container: qc.lic_baggy-emerald-quail
   QC.Sty:
     repos:
       github.com/madgeek-arc/resource-catalogue-ui hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.pasty-indigo-ragdoll.sh
-        container: qc.sty_tasty-sepia-hyena
+        - /usr/bin/env sh .sqa/script.bluesy-saffron-armadillo.sh
+        container: qc.sty_baggy-cornflower-pinscher
       github.com/madgeek-arc/resource-catalogue-ui jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.droopy-pink-cat.sh
-        container: qc.sty_scanty-black-opossum
+        - /usr/bin/env sh .sqa/script.silly-green-termite.sh
+        container: qc.sty_queasy-bistre-flamingo
   QC.Ver:
     repos:
       github.com/madgeek-arc/resource-catalogue-ui get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.cozy-amethyst-fowl.sh
-        container: qc.ver_smelly-champagne-sparrow
+        - /usr/bin/env sh .sqa/script.whiny-razzmatazz-hummingbird.sh
+        container: qc.ver_sleepy-coral-toad
 timeout: 5400
