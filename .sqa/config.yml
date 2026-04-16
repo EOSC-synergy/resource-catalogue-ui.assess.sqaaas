@@ -1,0 +1,56 @@
+config:
+  credentials: []
+  project_repos:
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: feature/pynblint_fix
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/madgeek-arc/resource-catalogue-ui:
+      branch: master
+      repo: https://github.com/madgeek-arc/resource-catalogue-ui
+environment:
+  JPL_DOCKERFORCEBUILD: enabled
+  JPL_KEEPGOING: enabled
+sqa_criteria:
+  QC.Acc:
+    repos:
+      github.com/madgeek-arc/resource-catalogue-ui git:
+        commands:
+        - /usr/bin/env sh .sqa/script.wiggy-malachite-mandrill.sh
+        container: qc.acc_freaky-heliotrope-ladybird
+  QC.Doc:
+    repos:
+      github.com/madgeek-arc/resource-catalogue-ui find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.cozy-platinum-ibis.sh
+        container: qc.doc_clammy-malachite-olm
+      github.com/madgeek-arc/resource-catalogue-ui git:
+        commands:
+        - /usr/bin/env sh .sqa/script.snazzy-celadon-whippet.sh
+        container: qc.doc_bumpy-sapphire-bordeaux
+      github.com/madgeek-arc/resource-catalogue-ui markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.crappy-xanthic-salamander.sh
+        container: qc.doc_jumpy-eggplant-caterpillar
+  QC.Lic:
+    repos:
+      github.com/madgeek-arc/resource-catalogue-ui licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.sloppy-green-warthog.sh
+        container: qc.lic_zippy-purple-opossum
+  QC.Sty:
+    repos:
+      github.com/madgeek-arc/resource-catalogue-ui hadolint:
+        commands:
+        - /usr/bin/env sh .sqa/script.sunny-bronze-chicken.sh
+        container: qc.sty_squeaky-flax-jackal
+      github.com/madgeek-arc/resource-catalogue-ui jsonlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.gummy-pumpkin-okapi.sh
+        container: qc.sty_fuzzy-coral-vole
+  QC.Ver:
+    repos:
+      github.com/madgeek-arc/resource-catalogue-ui get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.fuzzy-green-wolverine.sh
+        container: qc.ver_lovely-ecru-kangaroo
+timeout: 5400
