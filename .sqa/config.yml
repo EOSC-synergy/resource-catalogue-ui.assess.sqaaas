@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: feature/pynblint_fix
+      branch: fix/updatego
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/madgeek-arc/resource-catalogue-ui:
       branch: master
@@ -15,42 +15,42 @@ sqa_criteria:
     repos:
       github.com/madgeek-arc/resource-catalogue-ui git:
         commands:
-        - /usr/bin/env sh .sqa/script.periwinkle_aware_ibis.sh
-        container: qc.acc_fog_romantic_kiwi
+        - /usr/bin/env sh .sqa/script.cinnamon_creative_elephant.sh
+        container: qc.acc_pearl_nurturing_hippopotamus
   QC.Doc:
     repos:
       github.com/madgeek-arc/resource-catalogue-ui find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.nutmeg_foolish_flounder.sh
-        container: qc.doc_ecru_kind_beaver
+        - /usr/bin/env sh .sqa/script.paprika_clever_boar.sh
+        container: qc.doc_gold_articulate_ibis
       github.com/madgeek-arc/resource-catalogue-ui git:
         commands:
-        - /usr/bin/env sh .sqa/script.vermilion_creative_kraken.sh
-        container: qc.doc_cardamom_articulate_lobster
+        - /usr/bin/env sh .sqa/script.hunter_honest_porpoise.sh
+        container: qc.doc_fog_zealous_armadillo
       github.com/madgeek-arc/resource-catalogue-ui markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.porcelain_serene_grizzly.sh
-        container: qc.doc_frost_shrewd_whale
+        - /usr/bin/env sh .sqa/script.walnut_sociable_phoenix.sh
+        container: qc.doc_flint_candid_iguana
   QC.Lic:
     repos:
       github.com/madgeek-arc/resource-catalogue-ui licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.sunset_vigilant_wasp.sh
-        container: qc.lic_caramel_analytical_chameleon
+        - /usr/bin/env sh .sqa/script.echelon_jubilant_armadillo.sh
+        container: qc.lic_mango_wondrous_octopus
   QC.Sty:
     repos:
       github.com/madgeek-arc/resource-catalogue-ui hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.cinnamon_inspired_stingray.sh
-        container: qc.sty_watermelon_alert_jellyfish
+        - /usr/bin/env sh .sqa/script.cosmos_dedicated_warthog.sh
+        container: qc.sty_cayenne_helpful_squid
       github.com/madgeek-arc/resource-catalogue-ui jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.red_calm_seahorse.sh
-        container: qc.sty_wheat_driven_roadrunner
+        - /usr/bin/env sh .sqa/script.powder_agile_donkey.sh
+        container: qc.sty_puce_silly_moose
   QC.Ver:
     repos:
       github.com/madgeek-arc/resource-catalogue-ui get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.flax_vibrant_armadillo.sh
-        container: qc.ver_cinnamon_tolerant_manta
+        - /usr/bin/env sh .sqa/script.polar_innocent_albatross.sh
+        container: qc.ver_gold_open_crow
 timeout: 5400
