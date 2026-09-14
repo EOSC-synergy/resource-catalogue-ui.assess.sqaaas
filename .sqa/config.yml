@@ -15,42 +15,42 @@ sqa_criteria:
     repos:
       github.com/madgeek-arc/resource-catalogue-ui git:
         commands:
-        - /usr/bin/env sh .sqa/script.sapphire_bright_dormouse.sh
-        container: qc.acc_yellow_loyal_gnu
+        - /usr/bin/env sh .sqa/script.persimmon_independent_squid.sh
+        container: qc.acc_clementine_playful_manatee
   QC.Doc:
     repos:
       github.com/madgeek-arc/resource-catalogue-ui find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.copper_dizzy_kiwi.sh
-        container: qc.doc_pearl_delighted_quail
+        - /usr/bin/env sh .sqa/script.caramel_productive_coyote.sh
+        container: qc.doc_periwinkle_articulate_goose
       github.com/madgeek-arc/resource-catalogue-ui git:
         commands:
-        - /usr/bin/env sh .sqa/script.teal_sociable_camel.sh
-        container: qc.doc_gunmetal_stubborn_uakari
+        - /usr/bin/env sh .sqa/script.slate_visionary_spider.sh
+        container: qc.doc_dusk_joyful_llama
       github.com/madgeek-arc/resource-catalogue-ui markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.cherry_cranky_antelope.sh
-        container: qc.doc_tide_joyful_flounder
+        - /usr/bin/env sh .sqa/script.ginger_realistic_seal.sh
+        container: qc.doc_rose_articulate_boa
   QC.Lic:
     repos:
       github.com/madgeek-arc/resource-catalogue-ui licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.boysenberry_decisive_piranha.sh
-        container: qc.lic_copper_playful_platypus
+        - /usr/bin/env sh .sqa/script.iris_peppy_tarantula.sh
+        container: qc.lic_bluebell_assured_marmoset
   QC.Sty:
     repos:
       github.com/madgeek-arc/resource-catalogue-ui hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.lagoon_radiant_spider.sh
-        container: qc.sty_teal_harmonious_goose
+        - /usr/bin/env sh .sqa/script.avocado_reliable_bullfrog.sh
+        container: qc.sty_seafoam_loyal_griffin
       github.com/madgeek-arc/resource-catalogue-ui jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.salmon_helpful_unicorn.sh
-        container: qc.sty_silver_logical_marmoset
+        - /usr/bin/env sh .sqa/script.maroon_loving_bear.sh
+        container: qc.sty_storm_dedicated_ferret
   QC.Ver:
     repos:
       github.com/madgeek-arc/resource-catalogue-ui get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.flint_confused_viper.sh
-        container: qc.ver_avocado_feisty_spren
+        - /usr/bin/env sh .sqa/script.apricot_wise_beaver.sh
+        container: qc.ver_cobalt_tolerant_flounder
 timeout: 5400
