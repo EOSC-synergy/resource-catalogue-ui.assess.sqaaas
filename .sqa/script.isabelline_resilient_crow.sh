@@ -4,6 +4,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 (
-cd github.com/madgeek-arc/resource-catalogue-ui &&
-    find_doc_files.py --file_type all
+cd github.com/cessda/resource-catalogue-ui &&
+    hadolint Dockerfile --failure-threshold error
 )

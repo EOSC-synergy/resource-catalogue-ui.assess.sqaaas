@@ -4,53 +4,53 @@ config:
     github.com/EOSC-synergy/sqaaas-tooling:
       branch: fix/updatego
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
-    github.com/madgeek-arc/resource-catalogue-ui:
+    github.com/cessda/resource-catalogue-ui:
       branch: master
-      repo: https://github.com/madgeek-arc/resource-catalogue-ui
+      repo: https://github.com/cessda/resource-catalogue-ui
 environment:
   JPL_DOCKERFORCEBUILD: enabled
   JPL_KEEPGOING: enabled
 sqa_criteria:
   QC.Acc:
     repos:
-      github.com/madgeek-arc/resource-catalogue-ui git:
+      github.com/cessda/resource-catalogue-ui git:
         commands:
-        - /usr/bin/env sh .sqa/script.persimmon_independent_squid.sh
-        container: qc.acc_clementine_playful_manatee
+        - /usr/bin/env sh .sqa/script.butterscotch_rustic_iguana.sh
+        container: qc.acc_indigo_candid_grizzly
   QC.Doc:
     repos:
-      github.com/madgeek-arc/resource-catalogue-ui find_doc_files.py:
+      github.com/cessda/resource-catalogue-ui find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.caramel_productive_coyote.sh
-        container: qc.doc_periwinkle_articulate_goose
-      github.com/madgeek-arc/resource-catalogue-ui git:
+        - /usr/bin/env sh .sqa/script.flax_supportive_raccoon.sh
+        container: qc.doc_brown_tactful_roc
+      github.com/cessda/resource-catalogue-ui git:
         commands:
-        - /usr/bin/env sh .sqa/script.slate_visionary_spider.sh
-        container: qc.doc_dusk_joyful_llama
-      github.com/madgeek-arc/resource-catalogue-ui markdownlint:
+        - /usr/bin/env sh .sqa/script.frost_inventive_griffin.sh
+        container: qc.doc_mauve_reliable_starfish
+      github.com/cessda/resource-catalogue-ui markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.ginger_realistic_seal.sh
-        container: qc.doc_rose_articulate_boa
+        - /usr/bin/env sh .sqa/script.indigo_jubilant_komodo.sh
+        container: qc.doc_pine_rational_eagle
   QC.Lic:
     repos:
-      github.com/madgeek-arc/resource-catalogue-ui licensee:
+      github.com/cessda/resource-catalogue-ui licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.iris_peppy_tarantula.sh
-        container: qc.lic_bluebell_assured_marmoset
+        - /usr/bin/env sh .sqa/script.violet_enthusiastic_okapi.sh
+        container: qc.lic_echelon_intuitive_panda
   QC.Sty:
     repos:
-      github.com/madgeek-arc/resource-catalogue-ui hadolint:
+      github.com/cessda/resource-catalogue-ui hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.avocado_reliable_bullfrog.sh
-        container: qc.sty_seafoam_loyal_griffin
-      github.com/madgeek-arc/resource-catalogue-ui jsonlint:
+        - /usr/bin/env sh .sqa/script.isabelline_resilient_crow.sh
+        container: qc.sty_chestnut_bright_impala
+      github.com/cessda/resource-catalogue-ui jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.maroon_loving_bear.sh
-        container: qc.sty_storm_dedicated_ferret
+        - /usr/bin/env sh .sqa/script.orange_helpful_capybara.sh
+        container: qc.sty_persimmon_dreamy_hare
   QC.Ver:
     repos:
-      github.com/madgeek-arc/resource-catalogue-ui get_git_tags.py:
+      github.com/cessda/resource-catalogue-ui get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.apricot_wise_beaver.sh
-        container: qc.ver_cobalt_tolerant_flounder
+        - /usr/bin/env sh .sqa/script.butter_foolish_ibis.sh
+        container: qc.ver_crimson_aware_pelican
 timeout: 5400
