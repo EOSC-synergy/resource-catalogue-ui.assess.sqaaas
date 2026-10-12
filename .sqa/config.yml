@@ -15,42 +15,42 @@ sqa_criteria:
     repos:
       github.com/cessda/resource-catalogue-ui git:
         commands:
-        - /usr/bin/env sh .sqa/script.butterscotch_rustic_iguana.sh
-        container: qc.acc_indigo_candid_grizzly
+        - /usr/bin/env sh .sqa/script.navy_proactive_stork.sh
+        container: qc.acc_crimson_sweet_chinchilla
   QC.Doc:
     repos:
       github.com/cessda/resource-catalogue-ui find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.flax_supportive_raccoon.sh
-        container: qc.doc_brown_tactful_roc
+        - /usr/bin/env sh .sqa/script.sand_ambitious_dingo.sh
+        container: qc.doc_azure_sweet_peacock
       github.com/cessda/resource-catalogue-ui git:
         commands:
-        - /usr/bin/env sh .sqa/script.frost_inventive_griffin.sh
-        container: qc.doc_mauve_reliable_starfish
+        - /usr/bin/env sh .sqa/script.glaucous_amiable_jellyfish.sh
+        container: qc.doc_gray_peaceful_stingray
       github.com/cessda/resource-catalogue-ui markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.indigo_jubilant_komodo.sh
-        container: qc.doc_pine_rational_eagle
+        - /usr/bin/env sh .sqa/script.fern_graceful_bullfrog.sh
+        container: qc.doc_sepia_shrewd_condor
   QC.Lic:
     repos:
       github.com/cessda/resource-catalogue-ui licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.violet_enthusiastic_okapi.sh
-        container: qc.lic_echelon_intuitive_panda
+        - /usr/bin/env sh .sqa/script.marigold_graceful_ibis.sh
+        container: qc.lic_dusk_humble_lynx
   QC.Sty:
     repos:
       github.com/cessda/resource-catalogue-ui hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.isabelline_resilient_crow.sh
-        container: qc.sty_chestnut_bright_impala
+        - /usr/bin/env sh .sqa/script.fandango_tactful_cockatoo.sh
+        container: qc.sty_plum_humorous_donkey
       github.com/cessda/resource-catalogue-ui jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.orange_helpful_capybara.sh
-        container: qc.sty_persimmon_dreamy_hare
+        - /usr/bin/env sh .sqa/script.hunter_joyful_leopard.sh
+        container: qc.sty_ginger_scrappy_whale
   QC.Ver:
     repos:
       github.com/cessda/resource-catalogue-ui get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.butter_foolish_ibis.sh
-        container: qc.ver_crimson_aware_pelican
+        - /usr/bin/env sh .sqa/script.flax_artistic_bat.sh
+        container: qc.ver_isabelline_lively_beaver
 timeout: 5400
